@@ -1,0 +1,36 @@
+.service-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  z-index: 0;
+}
