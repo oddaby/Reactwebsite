@@ -13,10 +13,11 @@ const navLinks = [
   },
   {
     name: "Services",
-    path: "/Services",
+    path: "services-section", // Updated path to the ID of the services section
     description: "Explore our range of services",
     icon: "fas fa-briefcase",
   },
+
   {
     name: "Case Studies",
     path: "/case-studies",

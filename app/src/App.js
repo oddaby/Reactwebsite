@@ -4,13 +4,17 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import Services from "./components/Services/ServicesSection ";
+import Footer from "./components/Footer/Footer";
+import Comment from "./components/Comment/Comment";
 
 const App = () => {
   return (
     <div>
       <Navbar />
       <Banner />
-      <Services/>
+      <Services />
+      <Comment/>
+      <Footer/>
     </div>
   );
 };

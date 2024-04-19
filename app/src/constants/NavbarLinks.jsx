@@ -1,6 +1,7 @@
 import React from "react";
 import navLinks from "./navLinks";
-import { colors } from "./colors"; // Import the colors object
+import { colors } from "./colors";
+import { Link } from "react-scroll"; // Import the Link component from react-scroll
 
 const NavbarLinks = () => {
   return (
@@ -8,13 +9,15 @@ const NavbarLinks = () => {
       <ul className="navbar-nav text-bold">
         {navLinks.map((link, index) => (
           <li key={index} className="nav-item">
-            <a
+            <Link
               className="nav-link"
-              href={link.path}
+              to={link.path} // Use the Link component with the "to" prop set to the path
+              smooth={true} // Enable smooth scrolling
+              duration={1000} // Set the duration of the scroll animation
               style={{ color: colors.darkGreen }}
             >
               <i className={`fas fa-${link.icon}`}></i> {link.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
